@@ -15,6 +15,8 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-endwise'
 " インデントに色を付けて見やすくする
 Plug 'nathanaelkane/vim-indent-guides'
+" 自動補完、コード分析、Linting、デバッグなどの機能を提供
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
 
