@@ -33,7 +33,7 @@ inoremap <silent><expr> <Tab>
       \ <SID>check_back_space() ? "\<Tab>" :
       \ coc#refresh()
 
-"coc.nvimとaleを連携
+" coc.nvimとaleを連携
 let g:ale_disable_lsp = 1
 let g:ale_lint_on_text_changed = 1
 
