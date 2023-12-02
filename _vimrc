@@ -17,6 +17,8 @@ Plug 'tpope/vim-endwise'
 Plug 'nathanaelkane/vim-indent-guides'
 " 自動補完、コード分析、Linting、デバッグなどの機能を提供
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" 非同期のコードチェックを行う
+Plug 'dense-analysis/ale'
 
 call plug#end()
 
@@ -30,6 +32,10 @@ inoremap <silent><expr> <Tab>
       \ pumvisible() ? "\<C-n>" :
       \ <SID>check_back_space() ? "\<Tab>" :
       \ coc#refresh()
+
+"coc.nvimとaleを連携
+let g:ale_disable_lsp = 1
+let g:ale_lint_on_text_changed = 1
 
 " Required:
 filetype plugin indent on
