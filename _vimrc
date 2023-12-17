@@ -8,7 +8,7 @@ Plug 'Shougo/unite.vim'
 " Unite.vimで最近使ったファイルを表示できるようにする
 Plug 'Shougo/neomru.vim'
 " ファイルをtree表示してくれる
-Plug 'scrooloose/nerdtree'
+Plug 'preservim/nerdtree'
 " Gitを便利に使う
 Plug 'tpope/vim-fugitive'
 " Ruby向けにendを自動挿入
