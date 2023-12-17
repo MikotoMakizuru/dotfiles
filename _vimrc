@@ -22,6 +22,8 @@ Plug 'dense-analysis/ale'
 
 call plug#end()
 
+nnoremap <C-t> :NERDTreeToggle<CR>
+
 " Tabキーで補完候補を選択できるようにする
 function! s:check_back_space() abort
   let col = col('.') - 1
