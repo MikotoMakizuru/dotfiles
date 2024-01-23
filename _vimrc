@@ -15,6 +15,8 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-endwise'
 " インデントに色を付けて見やすくする
 Plug 'nathanaelkane/vim-indent-guides'
+" vimを立ち上げたときに、自動的にvim-indent-guidesをオンにする
+let g:indent_guides_enable_on_vim_startup = 1
 " 自動補完、コード分析、Linting、デバッグなどの機能を提供
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " 非同期のコードチェックを行う
